@@ -1,22 +1,4 @@
 {% capture location %}{{ page.url | remove_first:'/' | split:'/' | first }}{% endcapture %}<!doctype html>
- 	<!-- Whitespace added for readability -->
-	{% assign m = page.date | date: "%-m" %}
-	{{ page.date | date: "%-d" }}
-	{% case m %}
-	  {% when '1' %}Janvier
-	  {% when '2' %}Février
-	  {% when '3' %}Mars
-	  {% when '4' %}Avril
-	  {% when '5' %}Mai
-	  {% when '6' %}Juin
-	  {% when '7' %}Juillet
-	  {% when '8' %}Août
-	  {% when '9' %}Septembre
-	  {% when '10' %}Octobre
-	  {% when '11' %}Novembre
-	  {% when '12' %}Décembre
-	{% endcase %}
-
 <html>
 	<head>
 		<meta charset="utf-8" />

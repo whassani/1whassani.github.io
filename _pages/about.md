@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 layout:    default
-title:     Qui est Arionys
+title:     Qui est Arionys ?
 nobio:     true
 ---
 
@@ -14,11 +14,11 @@ Arionys est une société de service en informatique et de conseil en technologi
 
 Nous sommes spécilisés dans l'embarqué, l'automatique et la robotique.  Vous pouvez jeter un oeil à nos récents projets dans la section **[Projects](/projects/)** de ce site web.
 
-### Hire Us!
+### Embauchez-nous!
 
-Got an interesting web app that you want built? Need some technical consulting on your next tech project?  [Contact us](/contact/) for a quote!
+Vous avez une application embarqué intéressante que vous voulez mettre en oueuvre ? Besoin d'un peu de conseil technique sur votre projet technologique prochain ? [Contactez-nous](/contact/) pour un devis gratuit!
 
-### Travaillez avec nouc!
+### Travaillez avec nous!
 
 Nous sommes toujours à la recherche d'ingénieurs logiciels embarqués talentueux expérimentés dans au moins l'un des outils suivants :
 

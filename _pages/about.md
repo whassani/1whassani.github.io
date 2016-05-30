@@ -18,24 +18,25 @@ Nous sommes spécilisés dans l'embarqué, l'automatique et la robotique.  Vous 
 
 Got an interesting web app that you want built? Need some technical consulting on your next tech project?  [Contact us](/contact/) for a quote!
 
-### Work With Us!
+### Travaillez avec nouc!
 
-We're always looking for talented software engineers with experience in one or more of the following tools:
+Nous sommes toujours à la recherche d'ingénieurs logiciels embarqués talentueux expérimentés dans au moins l'un des outils suivants :
 
-* _Ruby_
-* _PHP 5.3+_ (Experience with the _[Lithium](http://lithify.me/)_ framework is a plus)
-* _MySQL_
-* _[MongoDB](http://www.mongodb.org/)_
-* _JavaScript_
-* _[React](http://facebook.github.io/react/)_ and _[Flux](http://facebook.github.io/flux/)_
+* _C/C++_
+* _Python_ (Experience with the _[Lithium](http://lithify.me/)_ framework is a plus)
+* _Linux embarqué_
+* _Cortex-ARM_
+* _IoT (Internet Of Thins)_
+* _Robotique_
+* _Automatique (modélisation, développement de lois de commande, navogation, etc)_
 * Responsive _HTML5_ and _CSS_ design
 
 If you are available for contracting opportunities or part-time employment, [please contact us](/contact/)!
 
-### Network
+### Réseaux
 
-Follow Michael:  
+Follow Walid:  
 ↪ [github](http://github.com/mikegreiling) | [twitter](http://twitter.com/mikegreiling) | [facebook](http://facebook.com/mike.greiling)  
 
-Follow PixelCog:  
+Follow Arionys:  
 ↪ [github](http://github.com/pixelcog) | [twitter](http://twitter.com/pixelcog) | [facebook](http://facebook.com/pixelcog)

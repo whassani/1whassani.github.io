@@ -8,7 +8,7 @@ nobio:     true
 # Qui est Arionys ?
 -------------------
 
-![Me](http://www.gravatar.com/avatar/33f90637d77f8d4da67faafd3af6597e?s=200){: .profile .pull-right }
+![Me](/img/walid-photo.png){: .profile .pull-right }
 
 Arionys est une société de service en informatique et de conseil en technologies présidée par **Mike Greiling** à Montpellier.
 

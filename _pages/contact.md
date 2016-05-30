@@ -4,7 +4,7 @@ layout:    contact
 title:     Contact PixelCog
 ---
 
-# Contact Us
-------------
+# Contactez-nous
+----------------
 
-You can use the following contact form to send us an email, or you can message us on [twitter](http://twitter.com/pixelcog) or [facebook](http://facebook.com/pixelcog).
+Vous pouvez utiliser le formulaire de contact ci-dessous pour nous envoyer un email, ou bien, vous pouvez nous laisser un message sur [twitter](http://twitter.com/HassaniWaliid).

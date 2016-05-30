@@ -2,6 +2,7 @@
 layout:  post
 title:   Disable .DS_Store in OS X El Capitan
 tags:    osx asepsis ds_store el capitan
+image:   asepsis-el-capitan.jpg
 ---
 
 Like many OS X users, I *hate* .DS_Store files cluttering up my folders.  For the average OS X user working in the Finder these are hidden safely away from view, but for most programmers and really anyone who works in the Terminal these little garbage files tend to get in the way.

@@ -12,9 +12,9 @@ blogfeed:  true
 	<h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
 	<p class="post-meta">
 		<!-- Whitespace added for readability -->
-		{% assign m = page.date | date: "%-m" %}
+		{% assign mm = page.date | date: "%-mm" %}
 		{{ page.date | date: "%-d" }}
-		{% case m %}
+		{% case mm %}
 		  {% when '1' %}Janvier
 		  {% when '2' %}Février
 		  {% when '3' %}Mars

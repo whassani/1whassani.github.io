@@ -7,8 +7,8 @@ blogfeed: true
 <h1 class="post-title">{{ page.title }}</h1>
 <p class="post-meta">
 	 <!-- Whitespace added for readability -->
-	{% assign m = page.date | date: "%m" %}
-	{{ page.date | date: "%d" }}
+	{% assign m = page.date | date: "%-m" %}
+	{{ page.date | date: "%-d" }}
 	{% case m %}
 	  {% when '1' %}Janvier
 	  {% when '2' %}Février

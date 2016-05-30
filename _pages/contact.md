@@ -1,7 +1,7 @@
 ---
 permalink: /contact/
 layout:    contact
-title:     Contact PixelCog
+title:     Contact Arionys
 ---
 
 # Contactez-nous

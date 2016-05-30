@@ -10,9 +10,9 @@ nobio:     true
 
 ![Me](http://www.gravatar.com/avatar/33f90637d77f8d4da67faafd3af6597e?s=200){: .profile .pull-right }
 
-Arionys est PixelCog is multi-talented web programming shop operated by **Mike Greiling** in Minneapolis, MN.
+Arionys est une société de service en informatique et de conseil en technologies présidée par **Mike Greiling** à Montpellier.
 
-Nous sommes spécilisés dans l'embarqué, l'automatique et la robotique.  Vous pouvez jenter un oeil à nos récents projets dans la section **[Projects](/projects/)** de ce site web.
+Nous sommes spécilisés dans l'embarqué, l'automatique et la robotique.  Vous pouvez jeter un oeil à nos récents projets dans la section **[Projects](/projects/)** de ce site web.
 
 ### Hire Us!
 

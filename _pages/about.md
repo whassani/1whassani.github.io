@@ -23,15 +23,14 @@ Got an interesting web app that you want built? Need some technical consulting o
 Nous sommes toujours à la recherche d'ingénieurs logiciels embarqués talentueux expérimentés dans au moins l'un des outils suivants :
 
 * _C/C++_
-* _Python_ (Experience with the _[Lithium](http://lithify.me/)_ framework is a plus)
+* _Python_
 * _Linux embarqué_
 * _Cortex-ARM_
 * _IoT (Internet Of Thins)_
 * _Robotique_
 * _Automatique (modélisation, développement de lois de commande, navogation, etc)_
-* Responsive _HTML5_ and _CSS_ design
 
-If you are available for contracting opportunities or part-time employment, [please contact us](/contact/)!
+Si vous êtes diponible pour saisir des opptotunités à temps plein ou à temps partiel, [merci de nous contacter](/contact/)!
 
 ### Réseaux
 

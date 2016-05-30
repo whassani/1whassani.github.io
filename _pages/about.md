@@ -5,8 +5,8 @@ title:     Qui est Arionys
 nobio:     true
 ---
 
-# About PixelCog
-----------------
+# Qui est Arionys
+-----------------
 
 ![Me](http://www.gravatar.com/avatar/33f90637d77f8d4da67faafd3af6597e?s=200){: .profile .pull-right }
 

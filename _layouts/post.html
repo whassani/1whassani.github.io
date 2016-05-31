@@ -4,35 +4,15 @@ blogfeed: true
 ---
 {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
 
-<!-- iterate through all tags on the site --> 
-{% for tagitem in site.tags %} 
-
-<!-- for each tag, create an anchor by using the tag name as an id --> 
-<div id="{{ tagitem[0] }}">  
-<h2> {{ tagitem[0] }} </h2>  <!-- for create a heading --> 
-
- <ul> <!-- create the list of posts -->
- <!-- iterate through all the posts on the site --> 
- {% for post in site.posts %} 
-      <!-- list only those which contain the current tag --> 
-      {% if post.tags contains tagitem[0] %} 
-         
-        <li>
-           <div class="tag-icon-image">
-             <!-- iterate and list the tags for the current post --> 
-             {% for tag in post.tags %} 
-                <div class="tag-link"><a href="#{{ tag }}">{{ tag }}</a></div> {% endfor %}</div>
-             {% endif %} 
-           </div>
-        </li>
-
-      {% endif %}
+<ul>
+  {% assign tags = site.tags | sort 0 %}
+  {% for tag_item in tags %}
+  {% assign tag = (tag_item | first) %}
+  <li>
+    <a href="{{site.url}}{{site.baseurl}}/tags/{{tag}}">{{site.data.tags[tag].name}}</a> ({{site.tags[tag].size}})
+  </li>
   {% endfor %}
 </ul>
-
-</div>
-{% endfor %}
-
 <h1 class="post-title">{{ page.title }}</h1>
 <p class="post-meta">
 	 <!-- Whitespace added for readability -->

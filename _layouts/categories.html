@@ -4,8 +4,8 @@ title: Categories
 header: Posts By Category
 ---
 
-<div class="col-sm-3 col-xs-6">
-    <ul class="nav nav-tabs-vertical cat-tag-menu">
+<div>
+    <ul>
       {% assign categories_list = site.categories %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
@@ -28,11 +28,11 @@ header: Posts By Category
     </ul>
 </div>
 <!-- Tab panes -->
-<div class="tab-content col-sm-9 col-xs-6">
+<div>
   {% for category in site.categories %}
-    <div class="tab-pane" id="{{ category[0] | replace:' ','-' }}-ref">
-      <h2 style="margin-top: 0px">Posts in {{ category[0] | capitalize }}</h2>
-      <ul class="list-unstyled">
+    <div>
+      <h2>Posts in {{ category[0] | capitalize }}</h2>
+      <ul">
         {% assign pages_list = category[1] %}
         {% for node in pages_list %}
           {% if node.title != null %}

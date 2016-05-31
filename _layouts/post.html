@@ -4,6 +4,13 @@ blogfeed: true
 ---
 {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
 
+<!-- Tags -->
+<ul class="tags">
+  {% for tag in page.tags %}
+    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+
 <h1 class="post-title">{{ page.title }}</h1>
 <p class="post-meta">
 	 <!-- Whitespace added for readability -->

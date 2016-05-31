@@ -27,11 +27,11 @@ blogfeed: true
 	{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. lecture &bull;
 	<a href="#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">Commentaires</a>
 	<br>	
-	<ul class="tags">
+	  {% if page.tags %} | 
 	  {% for tag in page.tags %}
-	    <li><a href="/tags#{{ tag }}" class="tag">{{ tag }}</a></li>
+	    <a href="{{ site.baseurl }}{{ site.tag_page }}#{{ tag | slugify }}" class="post-tag">{{ tag }}</a>
 	  {% endfor %}
-	</ul>
+	  {% endif %}
 </p>
 
 {% if page.image %}

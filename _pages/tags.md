@@ -4,43 +4,35 @@ layout:    default
 title:     Qui est Arionys ?
 ---
 
-<!-- Get the tag name for every tag on the site and set them
-to the `site_tags` variable. -->
 {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-
-<!-- `tag_words` is a sorted array of the tag names. -->
 {% assign tag_words = site_tags | split:',' | sort %}
 
-<!-- Build the Page -->
 
-<!-- List of all tags -->
-<ul class="tags">
+<div class="col-sm-3 col-xs-6">
+    <ul class="nav nav-tabs-vertical cat-tag-menu">
+    {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+      {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+      <li>
+          <a href="#{{ this_word | replace:' ','-' }}-ref">
+            {{ this_word }}<span class="badge pull-right">{{ site.tags[this_word].size }}</span>
+         </a>
+      </li>
+   {% endunless %}{% endfor %}
+   </ul>
+</div>
+<!-- Tab panes -->
+<div class="tab-content col-sm-9 col-xs-6">
   {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <li>
-      <a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }}
-        <span>({{ site.tags[this_word].size }})</span>
-      </a>
-    </li>
-  {% endunless %}{% endfor %}
-</ul>
-
-<!-- Posts by Tag -->
-<div>
-  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
-    {% capture this_word %}{{ tag_words[item] }}{% endcapture %}
-    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
-    {% for post in site.tags[this_word] %}{% if post.title != null %}
-      <div>
-        <span style="float: left;">
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        </span>
-        <span style="float: right;">
-          {{ post.date | date_to_string }}
-        </span>
-      </div>
-      <div style="clear: both;"></div>
-    {% endif %}{% endfor %}
+    {% capture this_word %}{{ tag_words[item] | strip_newlines }}{% endcapture %}
+    <div class="tab-pane" id="{{ this_word | replace:' ','-' }}-ref">
+      <h2 style="margin-top: 0px">Posts tagged  with {{ this_word }}</h2>
+      <ul class="list-unstyled">
+        {% for post in site.tags[this_word] %}{% if post.title != null %}
+          <li style="line-height: 35px;"><a href="{{ site.BASE_PATH }}{{post.url}}">{{post.title}}</a> <span class="text-muted">- {{ post.date | date: "%B %d, %Y" }}</span></li>
+        {% endif %}{% endfor %}
+      </ul>
+    </div>
   {% endunless %}{% endfor %}
 </div>
 
+<div class="clearfix"></div>

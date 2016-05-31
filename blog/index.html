@@ -14,17 +14,9 @@ blogfeed:  true
 		{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. lecture &bull;
 		<a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.path | split:'/' | last | cgi_escape }}">Commentaires</a>
 	</p>
-	{% if post.image %}
-	<a href="{{ post.url }}" class="post-banner" style="background-image: url(/img/post-banners/{{ post.image }});">
-		<img src="/img/post-banners/{{ post.image }}" alt="{{ post.title }}" />
-	</a>
-	{% else %}
-	<a href="{{ post.url }}" class="post-banner no-image">
-		<img src="/img/post-banners/no-image.gif" alt="{{ post.title }}" />
-	</a>
-	{% endif %}
-	
-	<p class="post-excerpt">{{ post.excerpt | strip_html }} [<a href="{{ post.url }}">read more</a>]</p>
+
+
+
 	
 {% endfor %}
 </div>

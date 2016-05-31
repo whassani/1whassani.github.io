@@ -718,17 +718,11 @@ form {
 }
 
 .tag {
-  background: #767676;
-  border-radius: 3px 0 0 3px;
-  color: #FFFFFF;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 20px 0 23px;
-  position: relative;
-  margin: 0 10px 10px 0;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
+background-color: grey;
+width: 300px;
+heigth: 150px;
+-moz-border-radius: 10px; 
+-webkit-border-radius: 10px; 
 }
 
 .tag-archive-font {

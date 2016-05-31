@@ -1,6 +1,6 @@
 ---
-permalink: /
-redirect:  /tags/
-layout:    redirect
+permalink: /tags/
+layout:    default
+title:     Qui est Arionys ?
 blogfeed:  true
 ---

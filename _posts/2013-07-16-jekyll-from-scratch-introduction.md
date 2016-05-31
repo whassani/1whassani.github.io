@@ -2,6 +2,7 @@
 layout:  post
 title:   Jekyll From Scratch - Getting Started
 tags:    jekyll
+categories: [general, demo]
 image:   jekyll-pt1-intro.gif
 updated: 2014-08-21 @ 7:31pm
 ---

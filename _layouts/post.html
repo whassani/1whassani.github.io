@@ -25,6 +25,7 @@ blogfeed: true
 	{% endcase %}
 	{{ page.date | date: "%Y"}}  &bull;
 	{% if readtime == '0' %} &lt; 1{% else %}{{ readtime }}{% endif %} min. lecture &bull;
+	{{ page.tags | array_to_sentence_string }} &bull; 
 	<a href="#disqus_thread" data-disqus-identifier="{{ page.path | split:'/' | last | cgi_escape }}">Commentaires</a>
 </p>
 

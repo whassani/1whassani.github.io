@@ -4,10 +4,10 @@ blogfeed: true
 ---
 {% capture readtime %}{{ page.content | number_of_words | plus:91 | divided_by:180.0 | append:'.' | split:'.' | first }}{% endcapture %}
 
-{% if post.tags.size > 0 %}
-  Tag{% if post.tags.size > 1 %}s{% endif %}:
-  {{ post.tags | sort | join: ", " }}
-{% endif %}
+Tags: 
+{% for tagitem in site.tags  %} 
+  [{{  tagitem[0] }}](#{{ tagitem[0] }}) 
+{% endfor %}
 
 <h1 class="post-title">{{ page.title }}</h1>
 <p class="post-meta">
